@@ -7,13 +7,13 @@ $ wget https://maximalisimus.github.io/elseworld-keyring/elseworld{.gpg,-revoked
 
 $ sudo mv elseworld{.gpg,-revoked,-trusted} /usr/share/pacman/keyrings/
 
-$ pacman-key --add /usr/share/pacman/keyrings/elseworld.gpg
+$ sudo pacman-key --add /usr/share/pacman/keyrings/elseworld.gpg
 
 $ ewid=$(cat elseworld-id.txt)
 
-$ pacman-key --lsign-key ${ewid}
+$ sudo pacman-key --lsign-key ${ewid}
 
-$ pacman-key --populate archlinux elseworld
+$ sudo pacman-key --populate archlinux elseworld
 
-$ pacman-key --refresh-keys
+$ sudo pacman-key --refresh-keys
 
