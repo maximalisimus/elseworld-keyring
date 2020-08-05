@@ -1,5 +1,5 @@
 # maximalisimus keyring
-# https://maximalisimus.github.io/elseworld-keyring/elseworld.gpg
+# https://maximalisimus.github.io/elseworld-keyring/
 
 $ pacman-key --init
 
