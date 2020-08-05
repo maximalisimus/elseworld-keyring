@@ -9,7 +9,7 @@ $ sudo mv elseworld{.gpg,-revoked,-trusted} /usr/share/pacman/keyrings/
 
 $ pacman-key --add /usr/share/pacman/keyrings/elseworld.gpg
 
-$ ewid= $(cat elseworld-id.txt)
+$ ewid=$(cat elseworld-id.txt)
 
 $ pacman-key --lsign-key ${ewid}
 
