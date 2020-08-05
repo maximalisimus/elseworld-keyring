@@ -1,20 +1,20 @@
 # Maximalisimus keyring gpg-key
 
-pkgname=maximalisimus-keyring
+pkgname=elseworld-keyring
 pkgver=stable
 pkgrel=1
-pkgdesc='maximalisimus PGP keyring'
+pkgdesc='elseworld PGP keyring'
 arch=('any')
-url='https://github.com/maximalisimus/maximalisimus-keyring'
+url='https://github.com/maximalisimus/elseworld-keyring'
 license=('GPL')
 install="${pkgname}.install"
 source=('Makefile'
-        'maximalisimus.gpg'
-        'maximalisimus-revoked'
-        'maximalisimus-trusted')
-md5sums=('c898af4bbabfd32595836594a419f9f9' # Makefile
+        'elseworld.gpg'
+        'elseworld-revoked'
+        'elseworld-trusted')
+md5sums=('547c89ef8b1c509a438dc580b08762d5' # Makefile
          'SKIP' # *.gpg
-         'd41d8cd98f00b204e9800998ecf8427e' # *-revoked
+         'SKIP' # *-revoked
          'SKIP') # *-trusted
 
 package() {
