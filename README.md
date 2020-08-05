@@ -16,4 +16,4 @@ $ sudo pacman-key --lsign-key ${ewid}
 $ sudo pacman-key --populate archlinux elseworld
 
 $ sudo pacman-key --refresh-keys
-
+ 
