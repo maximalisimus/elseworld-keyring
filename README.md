@@ -1,7 +1,7 @@
 # maximalisimus keyring
 # https://maximalisimus.github.io/elseworld-keyring/
 
-$ pacman-key --init
+$ sudo pacman-key --init
 
 $ wget https://maximalisimus.github.io/elseworld-keyring/elseworld{.gpg,-revoked,-trusted,-id.txt}
 
