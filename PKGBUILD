@@ -13,9 +13,9 @@ source=('Makefile'
         'elseworld-revoked'
         'elseworld-trusted')
 md5sums=('547c89ef8b1c509a438dc580b08762d5' # Makefile
-         '2f480d1c82fe4acc9da6bce9ea90b51b' # *.gpg
+         '284617f80ad66083b12b5cd9fa9d0ae4' # *.gpg
          'd41d8cd98f00b204e9800998ecf8427e' # *-revoked
-         'ae3a55c59146569b2ac2300564a6afde') # *-trusted
+         '077744c6332a8619d0c2e8d1f68956e3') # *-trusted
 
 package() {
   cd "${srcdir}"
