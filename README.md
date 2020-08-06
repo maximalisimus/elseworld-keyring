@@ -17,3 +17,5 @@ $ sudo pacman-key --populate archlinux elseworld
 
 $ sudo pacman-key --refresh-keys
 
+$ rm -rf elseworld-id.txt
+
