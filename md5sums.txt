@@ -4,6 +4,5 @@ d41d8cd98f00b204e9800998ecf8427e  elseworld-revoked
 077744c6332a8619d0c2e8d1f68956e3  elseworld-trusted
 284617f80ad66083b12b5cd9fa9d0ae4  elseworld.gpg
 547c89ef8b1c509a438dc580b08762d5  Makefile
-00539bfe8803342a52f4d8cb48e9b634  md5sums.txt
-abc4bffdd2a55d4498dee74bf2f3bd04  PKGBUILD
+d58776b42a3da7e20d2529d5a83dd9db  PKGBUILD
 abaf1640530bc2041796c0907c48a196  README.md
