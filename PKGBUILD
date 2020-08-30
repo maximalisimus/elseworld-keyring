@@ -12,10 +12,10 @@ source=('Makefile'
         'elseworld.gpg'
         'elseworld-revoked'
         'elseworld-trusted')
-md5sums=('547c89ef8b1c509a438dc580b08762d5' # Makefile
-         '284617f80ad66083b12b5cd9fa9d0ae4' # *.gpg
-         'd41d8cd98f00b204e9800998ecf8427e' # *-revoked
-         '077744c6332a8619d0c2e8d1f68956e3') # *-trusted
+sha256sums=('84d74fdee75835ba98637d1c0362bb6d89aa74fd82b8cf130d19153b14779e33' # Makefile
+			'44e8d7b4bbefacbdd374d35c0195162483557b82fca2bf6d2d4ebd22d846cdf9' # *.gpg
+			'e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855' # *-revoked
+			'fbee25c699401775ed8a035574f27cc815ae6608d23abae72be67fdd1ceb794d') # *-trusted
 
 package() {
   cd "${srcdir}"

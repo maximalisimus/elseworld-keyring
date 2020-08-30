@@ -1,9 +1,0 @@
-17059f804f810e1c76edd5cf81f38142  elseworld-id.txt
-d1217233fca10eaf717ad97de391c5c3  elseworld-keyring.install
-d41d8cd98f00b204e9800998ecf8427e  elseworld-revoked
-077744c6332a8619d0c2e8d1f68956e3  elseworld-trusted
-284617f80ad66083b12b5cd9fa9d0ae4  elseworld.gpg
-4833a32a2faf60912be2c2e2f5061647  install-keyring.sh
-547c89ef8b1c509a438dc580b08762d5  Makefile
-d58776b42a3da7e20d2529d5a83dd9db  PKGBUILD
-640b786c5164333232212e4e489d1fcf  README.md
