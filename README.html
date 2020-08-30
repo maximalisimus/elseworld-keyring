@@ -1,0 +1,97 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>ReadMe</title>
+	<link rel="stylesheet" href="https://maximalisimus.github.io/aur-kernel/html/readme.css">
+</head>
+<body>
+	<div class="site">
+		<div class="header">
+			<div id="logo">
+				<a href="https://maximalisimus.github.io/elseworld-keyring/"><img src="https://maximalisimus.github.io/aur-kernel/html/logo.png" alt="maximalisimus keyring repositories" /></a>
+				<p>maximalisimus keyring</p>
+			</div>
+			<div id="menu">
+				<ul>
+					<li><a href="https://maximalisimus.github.io/elseworld-keyring/">Home</a></li>
+					<li id="myselect"><a href="https://maximalisimus.github.io/elseworld-keyring/README.html">README</a></li>
+					<li><a href="https://maximalisimus.github.io/elseworld-keyring/Release.html">Release</a></li>
+				</ul>
+			</div>
+			<div style="clear:both;"></div>
+		</div>
+		<div class="content">
+			<table border="0">
+				<tr><td width="150" align="right">Author:</td><td width="10"></td><td>Mikhail Artamonov</td></tr>
+				<tr><td width="150" align="right">E-Mail:</td><td width="10"></td><td><a href="mailto:maximalis171091@yandex.ru">maximalis171091@yandex.ru</a></td></tr>
+				<tr><td width="150" align="right">Git tag Version:</td><td width="10"></td><td>1.0</td></tr>
+				<tr><td width="150" align="right">Git clone:</td><td width="10"></td><td><a href="https://github.com/maximalisimus/elseworld-keyring.git">https://github.com/maximalisimus/elseworld-keyring.git</a></td></tr>
+			</table>
+		</div>
+		<div class="content">
+			<h2>Russian</h2>
+			<h3>Описание</h3>
+			<p>В данном репозитории находятся публичные ключи для репозиториев пользователя maximalisimus.</p>
+			<h3>Установка</h3>
+			<p>Перед добавлением любого репозитория в конфигурацию pacman установите данные публичные ключи в вашу систему.</p>
+			<blockquote>
+<pre><code id="codes">&#36; wget https://maximalisimus.github.io/elseworld-keyring/install-keyring.sh
+&#36; sudo sh install-keyring.sh</code></pre>
+			</blockquote>
+			<p>Или загрузите и установите публичные ключи вручную следующими командами.</p>
+			<blockquote>
+<pre><code id="codes">&#36; sudo pacman-key --init
+&#36; wget https://maximalisimus.github.io/elseworld-keyring/elseworld{.gpg,-revoked,-trusted,-id.txt}
+&#36; sudo mv elseworld{.gpg,-revoked,-trusted} /usr/share/pacman/keyrings/
+&#36; sudo pacman-key --add /usr/share/pacman/keyrings/elseworld.gpg
+&#36; id_keyring=$(cat elseworld-id.txt)
+&#36; sudo pacman-key --lsign-key ${id_keyring}
+&#36; sudo pacman-key --populate archlinux elseworld
+&#36; rm -rf elseworld-id.txt</code></pre>
+			</blockquote>
+			<h3>Подробная информация о пакетах данного репозитория</h3>
+			<table border="0">
+				<tr><td align="right">Репозиторий с публичными ключами:</td><td width="10"></td><td><a href="https://maximalisimus.github.io/elseworld-keyring/">Release-keyring</a></td></tr>
+				<tr><td align="right">sha256sums:</td><td width="10"></td><td><a href="https://maximalisimus.github.io/elseworld-keyring/sha256sums.txt">sha256sums.txt</a></td></tr>
+				<tr><td align="right">Контроль версий:</td><td width="10"></td><td><a href="https://maximalisimus.github.io/elseworld-keyring/Release.html">Release.html</a></td></tr>
+			</table>
+			<p>Файл <a href="https://maximalisimus.github.io/elseworld-keyring/Release.html">Release.html</a> представляет из себя веб-страницу с подробной информацией о каждом пакете данного репозитория в табличной форме.</p>
+			<p style="font-size: 13pt"><a href="https://maximalisimus.github.io/elseworld-keyring/">&laquo; Назад</a></p>
+		</div>
+		<div class="content">
+			<h2>English</h2>
+			<h3>Description</h3>
+			<p>This repository contains public keys for the maximalisimus user repositories.</p>
+			<h3>Installation</h3>
+			<p>Before adding any repository to the pacman configuration, install these public keys in your system.</p>
+			<blockquote>
+<pre><code id="codes">&#36; wget https://maximalisimus.github.io/elseworld-keyring/install-keyring.sh
+&#36; sudo sh install-keyring.sh</code></pre>
+			</blockquote>
+			<p>Or download and install the public keys manually using the following commands.</p>
+			<blockquote>
+<pre><code id="codes">&#36; sudo pacman-key --init
+&#36; wget https://maximalisimus.github.io/elseworld-keyring/elseworld{.gpg,-revoked,-trusted,-id.txt}
+&#36; sudo mv elseworld{.gpg,-revoked,-trusted} /usr/share/pacman/keyrings/
+&#36; sudo pacman-key --add /usr/share/pacman/keyrings/elseworld.gpg
+&#36; id_keyring=$(cat elseworld-id.txt)
+&#36; sudo pacman-key --lsign-key ${id_keyring}
+&#36; sudo pacman-key --populate archlinux elseworld
+&#36; rm -rf elseworld-id.txt</code></pre>
+			</blockquote>
+			<h3>Detailed information about packages in this repository.</h3>
+			<table border="0">
+				<tr><td align="right">Repository with public keys:</td><td width="10"></td><td><a href="https://maximalisimus.github.io/elseworld-keyring/">Release-keyring</a></td></tr>
+				<tr><td align="right">sha256sums:</td><td width="10"></td><td><a href="https://maximalisimus.github.io/elseworld-keyring/sha256sums.txt">sha256sums.txt</a></td></tr>
+				<tr><td align="right">Version control:</td><td width="10"></td><td><a href="https://maximalisimus.github.io/elseworld-keyring/Release.html">Release.html</a></td></tr>
+			</table>
+			<p>File <a href="https://maximalisimus.github.io/elseworld-keyring/Release.html">Release.html</a> it is a web page with detailed information about each package of this repository in tabular form.</p>
+			<p style="font-size: 13pt"><a href="https://maximalisimus.github.io/elseworld-keyring/">&laquo; Back</a></p>
+		</div>
+		<div class="about">
+			<p>Copyright &copy; 2020 by <a href="mailto:maximalis171091@yandex.ru">Mikhail Artamonov</a>. Разработано при подержке и содействии <a href="https://vk.com/nixscript">Nixscript</a>.<br>
+			Developed with the support and assistance of <a href="https://vk.com/nixscript">Nixscript</a>.</p>
+		</div>
+	</div>
+</body>
+</html>

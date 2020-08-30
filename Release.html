@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Release</title>
+	<link rel="stylesheet" href="https://maximalisimus.github.io/aur-kernel/html/main.css">
+	<script src="https://maximalisimus.github.io/aur-kernel/html/script.js"></script>
+	<link rel="stylesheet" href="https://maximalisimus.github.io/aur-kernel/html/tablesorter/theme.default.min.css">
+	<script type="text/javascript" src="https://maximalisimus.github.io/aur-kernel/html/tablesorter/jquery-latest.min.js"></script>
+	<script type="text/javascript" src="https://maximalisimus.github.io/aur-kernel/html/tablesorter/jquery.tablesorter.min.js"></script>
+	<script type="text/javascript" src="https://maximalisimus.github.io/aur-kernel/html/tablesorter/jquery.tablesorter.pager.js"></script>
+	<script type="text/javascript" src="https://maximalisimus.github.io/aur-kernel/html/tablesorter/jquery.tablesorter.widgets.min.js"></script>
+	<script>
+		$(function() {
+			$("#myTable").tablesorter({
+				theme: 'default',
+				widgets:['zebra'],
+				cancelSelection:false
+			}).tablesorterPager({
+				size:10,
+				container:$('#pager'),
+				positionFixed:false,
+				page:10,
+				cssNext:'.next',
+				cssPrev:'.prev',
+				cssFirst:'.first',
+				cssLast:'.last'
+			});
+		});
+	</script>
+</head>
+<body>
+	<div class="site">
+		<div class="header">
+			<div id="logo">
+				<a href="https://maximalisimus.github.io/elseworld-keyring/"><img src="https://maximalisimus.github.io/aur-kernel/html/logo.png" alt="maximalisimus keyring repositories" /></a>
+				<p>maximalisimus keyring</p>
+			</div>
+			<div id="menu">
+				<ul>
+					<li><a href="https://maximalisimus.github.io/elseworld-keyring/">Home</a></li>
+					<li><a href="https://maximalisimus.github.io/elseworld-keyring/README.html">README</a></li>
+					<li id="myselect"><a href="https://maximalisimus.github.io/elseworld-keyring/Release.html">Release</a></li>
+				</ul>
+			</div>
+			<div style="clear:both;"></div>
+		</div>
+		<div class="content">
+			<h3>Подробная информация о каждом пакете данного репозитория
+			<br>(Detailed information about each package in this repository).<h3>
+		</div>
+		<div class="content">
+			<table id="myTable" class="results tablesorter">
+				<thead>
+					<tr>
+						<th>Name</th>
+						<th>Version</th>
+						<th>Arch</th>
+						<th>Last Updated</th>
+						<th>License</th>
+						<th class="tablesorter-noSort">Start date</th>
+						<th class="tablesorter-noSort">End date</th>
+						<th class="tablesorter-noSort">SHA256SUM</th>
+						<th class="tablesorter-noSort">Description</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td><a href="https://maximalisimus.github.io/elseworld-keyring/elseworld.gpg">elseworld.gpg</a></td>
+						<td>stable-1</td>
+						<td>any</td>
+						<td>2020-08-05</td>
+						<td>GPL</td>
+						<td>2020-08-05</td>
+						<td>2023-08-05</td>
+						<td><a href="https://maximalisimus.github.io/elseworld-keyring/sha256sums.txt">sha256sums.txt</a></td>
+						<td>Public keys.</td>
+					</tr>
+					<tr>
+						<td><a href="https://maximalisimus.github.io/elseworld-keyring/elseworld-revoked">elseworld-revoked</a></td>
+						<td>stable-1</td>
+						<td>any</td>
+						<td>2020-08-05</td>
+						<td>GPL</td>
+						<td>2020-08-05</td>
+						<td>2023-08-05</td>
+						<td><a href="https://maximalisimus.github.io/elseworld-keyring/sha256sums.txt">sha256sums.txt</a></td>
+						<td>Public key revocation file.</td>
+					</tr>
+					<tr>
+						<td><a href="https://maximalisimus.github.io/elseworld-keyring/elseworld-trusted">elseworld-trusted</a></td>
+						<td>stable-1</td>
+						<td>any</td>
+						<td>2020-08-05</td>
+						<td>GPL</td>
+						<td>2020-08-05</td>
+						<td>2023-08-05</td>
+						<td><a href="https://maximalisimus.github.io/elseworld-keyring/sha256sums.txt">sha256sums.txt</a></td>
+						<td>Public key trust level file.</td>
+					</tr>
+					<tr>
+						<td><a href="https://maximalisimus.github.io/elseworld-keyring/elseworld-id.txt">elseworld-id.txt</a></td>
+						<td>stable-1</td>
+						<td>any</td>
+						<td>2020-08-05</td>
+						<td>GPL</td>
+						<td>2020-08-05</td>
+						<td>2023-08-05</td>
+						<td><a href="https://maximalisimus.github.io/elseworld-keyring/sha256sums.txt">sha256sums.txt</a></td>
+						<td>Primary ID of the public key.</td>
+					</tr>
+					<tr>
+						<td><a href="https://maximalisimus.github.io/elseworld-keyring/elseworld-keyring.install">elseworld-keyring.install</a></td>
+						<td>stable-1</td>
+						<td>any</td>
+						<td>2020-08-05</td>
+						<td>GPL</td>
+						<td>-</td>
+						<td>-</td>
+						<td><a href="https://maximalisimus.github.io/elseworld-keyring/sha256sums.txt">sha256sums.txt</a></td>
+						<td>Public key installation file for PKGBUILD.</td>
+					</tr>
+					<tr>
+						<td><a href="https://maximalisimus.github.io/elseworld-keyring/PKGBUILD">PKGBUILD</a></td>
+						<td>stable-1</td>
+						<td>any</td>
+						<td>2020-08-05</td>
+						<td>GPL</td>
+						<td>-</td>
+						<td>-</td>
+						<td><a href="https://maximalisimus.github.io/elseworld-keyring/sha256sums.txt">sha256sums.txt</a></td>
+						<td>Shell script for building Archlinux packages.</td>
+					</tr>
+					<tr>
+						<td><a href="https://maximalisimus.github.io/elseworld-keyring/Makefile">Makefile</a></td>
+						<td>stable-1</td>
+						<td>any</td>
+						<td>2020-08-05</td>
+						<td>GPL</td>
+						<td>-</td>
+						<td>-</td>
+						<td><a href="https://maximalisimus.github.io/elseworld-keyring/sha256sums.txt">sha256sums.txt</a></td>
+						<td>A file containing a set of instructions used by the make utility in the build automation Toolkit.</td>
+					</tr>
+					<tr>
+						<td><a href="https://maximalisimus.github.io/elseworld-keyring/install-keyring.sh">install-keyring.sh</a></td>
+						<td>stable-1</td>
+						<td>any</td>
+						<td>2020-08-05</td>
+						<td>GPL</td>
+						<td>-</td>
+						<td>-</td>
+						<td><a href="https://maximalisimus.github.io/elseworld-keyring/sha256sums.txt">sha256sums.txt</a></td>
+						<td>Shell script that installs public keys to the system manually, i.e. without entering commands in the terminal.</td>
+					</tr>
+				</tbody>
+			</table>
+			<hr>
+			<p class="back"><a href="https://maximalisimus.github.io/elseworld-keyring/">&laquo; Назад (Back)</a></p>
+		</div>
+		<div class="about">
+			<p>Copyright &copy; 2020 by <a href="mailto:maximalis171091@yandex.ru">Mikhail Artamonov</a>. Разработано при подержке и содействии <a href="https://vk.com/nixscript">Nixscript</a>.<br>
+			Developed with the support and assistance of <a href="https://vk.com/nixscript">Nixscript</a>.</p>
+		</div>
+	</div>
+</body>
+</html>
