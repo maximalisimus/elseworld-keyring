@@ -1,7 +1,7 @@
 # Maximalisimus keyring gpg-key
 
 pkgname=elseworld-keyring
-pkgver=stable
+pkgver=1.1
 pkgrel=1
 pkgdesc='elseworld PGP keyring'
 arch=('any')
