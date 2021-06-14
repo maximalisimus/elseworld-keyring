@@ -9,3 +9,15 @@ post_install() {
         post_upgrade
     fi
 }
+
+post_remove() {
+	if [[ -e "/usr/share/pacman/keyrings/elseworld.gpg" ]]; then
+		rm -rf "/usr/share/pacman/keyrings/elseworld.gpg"
+	fi
+	if [[ -e "/usr/share/pacman/keyrings/elseworld-revoked" ]]; then
+		rm -rf "/usr/share/pacman/keyrings/elseworld-revoked"
+	fi
+	if [[ -e "/usr/share/pacman/keyrings/elseworld-trusted" ]]; then
+		rm -rf "/usr/share/pacman/keyrings/elseworld-trusted"
+	fi
+}

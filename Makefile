@@ -7,5 +7,5 @@ install:
 	install -m0644 elseworld{.gpg,-trusted,-revoked} $(DESTDIR)$(PREFIX)/share/pacman/keyrings/
 
 uninstall:
-	rm -f $(DESTDIR)$(PREFIX)/share/pacman/keyrings/elseworld{.gpg,-trusted,-revoked}
+	rm -rf $(DESTDIR)$(PREFIX)/share/pacman/keyrings/elseworld{.gpg,-trusted,-revoked}
 	rmdir -p --ignore-fail-on-non-empty $(DESTDIR)$(PREFIX)/share/pacman/keyrings/
