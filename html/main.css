@@ -89,18 +89,19 @@ BODY {
 }
 .header #menu ul li a {
 	text-decoration: none;
-	color: white;
+	color: grey;
 }
 .header #menu ul li a:visited {
 	text-decoration: none;
 }
 .header #menu ul li a:hover {
 	text-decoration: underline;
-	color: #1793D1;
+	color: white;
+	cursor:  pointer;
 }
 #menu #myselect a {
 	text-decoration: none;
-	color: #1793D1;
+	color: white;
 }
 #menu #myselect a:visited {
 	text-decoration: none;
